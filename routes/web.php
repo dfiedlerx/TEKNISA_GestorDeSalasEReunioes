@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Rotas de páginas de visualização
+Route::get('/', 'Home\HomeController@view');
+Route::get('/colaborador', 'Colaborador\ColaboradorController@view');
+Route::get('/sala', 'Sala\SalaController@view');
+Route::get('/agendamento', 'Agendamento\AgendamentoController@view');
